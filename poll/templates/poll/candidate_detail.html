@@ -1,0 +1,22 @@
+{% extends "poll/base.html" %}
+
+{% block title %}Candidate Details{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <center>
+  <table class="table">
+    <tr>
+      <td><img src="{{ obj.image.url }}" width="220" height="280" class="img-fluid"></td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Name: {{ obj.name }}</h3>
+        <h5>Position: {{ obj.position }}</h5>
+      </td>
+    </tr>
+  </table>
+</center>
+</div>
+
+{% endblock %}
